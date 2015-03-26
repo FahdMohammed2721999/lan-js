@@ -60,7 +60,7 @@ var HostProbe = function(address) {
     }
   };
 
-  /* 
+  /*
    * @param [Number] port the port to check
    * @return [Boolean] websockets spec disallows connection on port
    */
@@ -164,7 +164,7 @@ var HostScan = function(addresses, opts) {
     var startTime = new Date();
 
     // sends the probes
-    var sendProbe = function(i) { 
+    var sendProbe = function(i) {
       var addrIdx = batchIdx * batchSize + i;
       if (addrIdx >= addresses.length) return;
       var addr = addresses[addrIdx];

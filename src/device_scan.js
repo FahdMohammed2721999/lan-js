@@ -214,7 +214,7 @@ var DeviceFingerprint = function(type, device, fingerprint) {
     }
   };
 
-  
+
   /*
    * Patch toString() for a nice debug display
    * @return [String] serialized representation

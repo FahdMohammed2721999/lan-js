@@ -4,7 +4,9 @@ module.exports = function(grunt) {
   var SRC_FILES = [
     'src/utils.js',
     'src/host_scan.js',
-    'src/device_scan.js'
+    'src/device_scan.js',
+    'src/ip_discovery.js',
+    'src/db.js'
   ];
 
   grunt.loadNpmTasks('grunt-contrib-compress');

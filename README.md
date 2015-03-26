@@ -28,7 +28,7 @@ Scan the following devices on your network, and print any device matches
 The `DeviceScan` class is in charge of scanning for responsive hosts and then looking for fingerprintable images, scripts, or stylesheets served by an HTTP service on that host.
 
 A fingerprint is a set of criteria for matching a device. There are three types of fingerprints: images, scripts, and stylesheets.
-  
+
     // image fingerprint
     {
       type: 'image',
@@ -88,4 +88,4 @@ To have grunt "watch" your filesystem and run specs on change, do:
 
 #### Copyright
 
-2006-2014, Rapid7, Inc.
+2006-2015, Rapid7, Inc.
