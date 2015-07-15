@@ -45,6 +45,7 @@ function discoverIps(opts, callback) {
 
     function processIPs(newAddr) {
       if (newAddr in addrs) return;
+      if (!newAddr.match(/^\d+\.\d+\.\d+\.\d+$/)) return;
       else addrs[newAddr] = true;
 
       if (opts.waitForNext) {

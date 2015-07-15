@@ -676,6 +676,7 @@ function discoverIps(opts, callback) {
 
     function processIPs(newAddr) {
       if (newAddr in addrs) return;
+      if (!newAddr.match(/^\d+\.\d+\.\d+\.\d+$/)) return;
       else addrs[newAddr] = true;
 
       if (opts.waitForNext) {
@@ -770,12 +771,14 @@ this.lan.db.devices = [
       }
     ]
   }, {
-    make: "Cisco",
-    model: "2600",
+    make: "Polycom",
+    model: "Unknown",
     fingerprints:[
       {
         type: "image",
-        url: "/images/logo.png"
+        url: "/images/logo.png",
+        width: 190,
+        height: 56
       }
     ]
   }, {

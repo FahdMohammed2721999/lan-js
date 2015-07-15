@@ -39,12 +39,14 @@ this.lan.db.devices = [
       }
     ]
   }, {
-    make: "Cisco",
-    model: "2600",
+    make: "Polycom",
+    model: "Unknown",
     fingerprints:[
       {
         type: "image",
-        url: "/images/logo.png"
+        url: "/images/logo.png",
+        width: 190,
+        height: 56
       }
     ]
   }, {
