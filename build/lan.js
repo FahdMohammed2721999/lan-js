@@ -653,7 +653,7 @@ function discoverIps(opts, callback) {
    * https://github.com/beefproject/beef/wiki/Module:-Get-Internal-IP-WebRTC
    */
 
-  var RTCPeerConnection = window.webkitRTCPeerConnection || window.mozRTCPeerConnection;
+  var RTCPeerConnection = window.webkitRTCPeerConnection || window.mozRTCPeerConnection || window.RTCPeerConnection;
   function run() {
     var addrs = { "0.0.0.0": false };
     var pendingTimeout = null;
